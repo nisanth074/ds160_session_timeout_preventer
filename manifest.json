@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "DS-160 Session Timeout Preventer",
+  "version": "1.0",
+  "description": "Prevent DS-160 application session timeout",
+  "content_scripts": [
+    {
+      "matches": ["*://ceac.state.gov/*"],
+      "js": ["ds160_session_timeout_preventer.js"]
+    }
+  ]
+}
